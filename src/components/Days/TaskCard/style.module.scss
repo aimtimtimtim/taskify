@@ -1,0 +1,177 @@
+@import "@/variables";
+
+.taskCard {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  border: $black-500;
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px $black-600 solid;
+
+  word-wrap: break-word;
+  word-break: break-all
+
+}
+
+.top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.taskTitle {
+  padding: 2px;
+  font-size: 34px;
+  font-weight: bold;
+}
+.editTitle {
+  padding: 2px;
+  font-size: 34px;
+  font-weight: bold;
+  resize: none;
+  width: 100%;
+  color: $black-50;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: $black-50;
+  }
+}
+
+.taskContent {
+  font-size: 22px;
+
+}
+
+.editContent {
+  resize: none;
+  min-width: 100%;
+  max-width: 100%;
+  color: $black-50;
+  height: 26px;
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  outline: none;
+  overflow-y: auto;
+
+  &::placeholder {
+    color: $black-50;
+  }
+}
+
+.more {
+  cursor: pointer;
+  min-width: fit-content;
+  min-height: fit-content;
+  color: $black-450;
+  box-sizing: content-box;
+  padding: 6px;
+
+  &:hover {
+    transition: .2s ease-in-out;
+    color: $black-400;
+    border-radius: 8px;
+  }
+}
+
+.taskTime {
+  margin: 6px 0 12px;
+  display: block;
+  font-size: 14px;
+  color: $black-400;
+}
+
+
+.modal {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: $black-700;
+  font-size: 14px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.delete, .edit {
+  padding: 8px 34px 8px 8px;
+  width: 100%;
+  color: #ff3737;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+
+  &:hover {
+    transition: .3s ease-in-out;
+    background-color: $black-600;
+  }
+
+}
+
+.edit {
+  color: $black-400;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    font-size: 12px;
+  }
+
+  .icn {
+    color: $black-450;
+
+    &:hover {
+      transition: .3s ease-in-out;
+      color: $black-300;
+    }
+  }
+}
+
+.editButtons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.cancelButton {
+  color: $black-400;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    color: $black-300;
+  }
+}
+
+.saveButton {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: $black-100;
+  border: none;
+  border-radius: 12px;
+}

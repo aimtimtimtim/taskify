@@ -1,0 +1,47 @@
+@import "@/variables";
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  border: 1px solid $black-800;
+  border-radius: 16px;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.month {
+  width: 200px;
+  font-size: 22px;
+  font-weight: bold;
+  color: $black-50;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: $black-800;
+  border: none;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+
+  }
+}
+
+.disabled {
+  border: $black-500;
+  background-color: $black-900;
+}

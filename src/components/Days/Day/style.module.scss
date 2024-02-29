@@ -1,0 +1,91 @@
+@import "@/variables";
+
+.day {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  color: $black-500;
+  padding: 12px;
+  border: 1px solid $black-700;
+  border-radius: 12px;
+  min-height: 120px;
+  font-size: 22px;
+
+  &:hover {
+    transition: background-color .1s ease-in-out;
+    outline: 1px solid $black-600;
+  }
+}
+
+.today {
+  background-color: $black-900;
+  color: $black-500;
+  border: 1px solid $black-450;
+}
+
+.todayBadge {
+  font-weight: 400;
+  color: $black-50;
+  font-size: 14px;
+}
+
+.dayTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-size: 24px;
+  font-weight: 400;
+  color: $black-450;
+}
+
+.currentDate {
+  font-weight: 400;
+  color: $black-50;
+}
+
+.add {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  padding: 10px;
+  border: 1px dashed $black-450;
+  border-radius: 50%;
+  border-spacing: 100px;
+  cursor: pointer;
+
+
+}
+
+.add.visible {
+  opacity: 1;
+}
+
+.notes {
+  display: flex;
+  gap: 4px;
+
+}
+
+.note {
+
+background-color: $black-400;
+  border-radius: 12px;
+  width: 8px;
+  height: 20px;
+}
+.notesText{
+  font-size: 22px;
+}

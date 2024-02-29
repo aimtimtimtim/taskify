@@ -1,0 +1,96 @@
+@import "@/variables";
+.blur{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(8px);
+}
+.newNote {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  background-color: $black-700;
+  padding: 20px;
+  border-radius: 16px;
+  width: 600px;
+  margin: 0 auto;
+
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.close {
+  color: $black-450;
+  box-sizing: content-box;
+  padding: 6px;
+  &:hover{
+    transition: .2s ease-in-out;
+    color: $black-400;
+    background-color: $black-500;
+    border-radius: 12px;
+  }
+}
+
+.label {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black-400;
+}
+
+.input, .textArea {
+  border-radius: 8px;
+  padding: 12px;
+  background-color: $black-800;
+  border: none;
+  font-size: 22px;
+  outline: none;
+  color: white;
+  min-height: 40px;
+  min-width: 100%;
+  max-width: 100%;;
+}
+
+.addButton {
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 0 auto;
+  width: 60%;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: $black-600;
+
+  &:hover {
+    transition: background-color .4s ease-in-out;
+    background-color: $black-500;
+  }
+}
+
+.errMessage{
+  border-radius: 6px;
+  padding: 2px 6px;
+  width: fit-content;
+  background-color: #720101;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ff8686;
+}

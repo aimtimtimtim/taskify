@@ -1,0 +1,61 @@
+@import "@/variables.scss";
+.sidebar {
+
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  height: calc(100vh - 80px);
+  width: 280px;
+  padding: 20px;
+  color: $black-50;
+  border-radius: 16px;
+  border: 1px solid $black-600;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.mark{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.topElement, .bottomElement{
+  background-color: white;
+  width: 24px;
+  height: 8px;
+  border-radius: 100px;
+}
+.bottomElement{
+  width: 16px;
+}
+.logoText{
+  font-size: 22px;
+  font-weight: bold;
+}
+.sidebarContent{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+.menuItem{
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 12px;
+}
+.active{
+  background-color: $black-800;
+}
+.version{
+  font-size: 14px;
+  color: $black-400;
+
+}
